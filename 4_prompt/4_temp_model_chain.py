@@ -38,7 +38,7 @@ template = load_prompt('template.json')
 
 if st.button("Summerize"):
 
-    chain = template | chat_model 
+    chain = ( template | chat_model )
     result = chain.invoke({
         'paper_input':paper_input,
         'style_input': style_input,
