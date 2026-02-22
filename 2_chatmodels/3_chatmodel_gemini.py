@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-chat_model = ChatGoogleGenerativeAI(model = "gemini-1.5-pro")
+chat_model = ChatGoogleGenerativeAI(model="gemini-2.5-pro")
 
-result = chat_model.invoke("enter your question ")
+result = chat_model.invoke("what is the capital of india ")
 
-print(result.content)
+print(result.content[0]['text'])
 
 
 #api key in format: GOOGLE_API_KEY = "your_api_key"
