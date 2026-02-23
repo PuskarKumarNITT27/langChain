@@ -1,0 +1,7 @@
+1. StrOutputParser => only parse the result.content to string 
+
+2. JsonOutputParser => request json response from llm but don't enforce rigid schema
+
+3. StructuredOutputParser => enforce rigid schema but no validation , but now this parser is depricated in newer langchain version
+
+4. PydanticOutputParser => enfoce rigid schema as well as expect only json response 
