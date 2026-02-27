@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/10UFCS6INqyDhW0Hn7f_BCScbCwuWjQT0
 """
 
-!pip install langchain chromadb faiss-cpu langchain_huggingface langchain-community wikipedia sentence-transformers
+# !pip install langchain chromadb faiss-cpu langchain_huggingface langchain-community wikipedia sentence-transformers
 
 """#Wikipedia Retriever"""
 
@@ -41,7 +41,7 @@ document = [
     Document(page_content='OpenAI provides powerful embedding models.')
 ]
 
-!pip install sentence-transformers
+# !pip install sentence-transformers
 
 #step 2: initialize embedding model
 embedding_model = HuggingFaceEmbeddings(model_name = "sentence-transformers/all-MiniLM-L6-v2")
